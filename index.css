@@ -83,7 +83,7 @@ header{
     margin: 0 auto;
     background-color: #fff;
     width: 99%;
-    padding: 5px;
+    /* padding: 2px; */
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -91,7 +91,7 @@ header{
     display: flex;
     background-color: #fff;
     width: 100%;
-    margin: 8px 8rem;
+    margin: 5px 8rem;
 }
 
 nav{
@@ -252,7 +252,38 @@ main .bloc{
 .dot_position{
     border: 1px solid;
     width:fit-content; 
-    margin:-20px auto;
-   
+    margin:-20px auto; 
 }
+
+footer {
+    margin-top: 20px;
+    width: 81.7%;
+    margin: 10px auto;
+}
+#footer {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+footer img{
+    height: 110px;
+    margin: 0 auto;
+}
+.slide-container {
+    overflow: auto;
+    white-space: nowrap;
+}
+.img_footer2{
+display: none;
+}
+.arrow2,.arrow1{
+background-color: transparent;
+border: none;
+max-height: 50px;
+margin: auto 0;
+}
+.arrow2:hover,.arrow1:hover{
+cursor: pointer;
+}
+
 

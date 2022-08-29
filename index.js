@@ -16,6 +16,30 @@ function carousel() {
   photos[index-1].style.display = "block";
   dot[index-1].style.backgroundColor = '#f68b0e';
 
-  setTimeout(carousel, 2000); // Change image every 2 seconds
+  setTimeout(carousel, 2000); 
 }
 
+const arrow1 = document.querySelector(".arrow1");
+const arrow2 = document.querySelector(".arrow2");
+arrow1.disabled = true;
+
+function slideFooter(){
+  const img1 = document.querySelectorAll('.img_footer1');
+  const img2 = document.querySelectorAll('.img_footer2');
+
+  for (let i = 0; i < img1.length; i++) {
+    const slide1 = img1[i];
+    const slide2 = img2[i];
+    if (slide1.style.display == 'block') {
+      slide1.style.display = 'none';
+      slide2.style.display = 'block';
+      arrow2.disabled = true;
+      arrow1.disabled = false;
+    } else {
+      slide1.style.display = 'block';
+      slide2.style.display = 'none';
+      arrow1.disabled = true;
+      arrow2.disabled = false;
+    }
+  }
+}
