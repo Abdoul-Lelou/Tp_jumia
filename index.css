@@ -403,7 +403,8 @@ cursor: pointer;
     }
     
     #bloc1 ul li {
-        border: 1px solid red;
+        /* border: 1px solid red; */
+        border-bottom: #555 1px solid;
         min-width: 42vh;
         padding: 5px;
         margin:0px;
